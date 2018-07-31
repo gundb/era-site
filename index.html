@@ -1,82 +1,154 @@
-<link href="https://fonts.googleapis.com/css?family=Comfortaa|League+Script|Poiret+One" rel="stylesheet">
-<style>
-* { box-sizing: border-box; }
-.bgcover {
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -999;
-  background: url(http://www.tokkoro.com/picsup/2808961-landscape-cityscape-skyscraper-building-sunrise-lights-bay-pier-hong-kong-sea-mountain-clouds-urban-architecture-modern-nature___landscape-nature-wallpapers.jpg);
-  background-size: cover;
-  background-position: 65%;
-}
-.bgvid,
-.bgvid iframe, .bgvid img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Era - A New Era of Economics</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <a class="header-top-logo" href="index.html">Era</a>
 
-@media (min-aspect-ratio: 16/9) {
-  .bgvid { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .bgvid { width: 300%; left: -100%; }
-}
+          <nav class="header-top-nav">
+            <a class="header-top-nav-item" href="#">Products</a>
+            <a class="header-top-nav-item" href="#">Developers</a>
+            <a class="header-top-nav-item" href="#">Team</a>
+            <a class="header-top-nav-item" href="#">Contact</a>
+          </nav>
+        </div>
 
-html, body {
-	font-size: 18pt;
-}
-.center {
-	text-align: center;
-}
-.whitet {
-	color: white;
-	text-shadow: 0px 0px 4px black;
-}
-.large {
-	font-size: 120%;
-}
-.shout {
-	font-size: 10vw;
-	padding-top: 17%;
-}
-.a {
-	font-family: 'Poiret One', cursive;
-}
-.b {
-	font-family: 'Comfortaa', cursive;
-}
-.c {
-	font-family: 'League Script', cursive;
-}
-</style>
-<div class="bgcover">
-  <div class="bgvid">
-  	<!--
-  		https://wallpaperscraft.com/image/building_sunrise_chicago_skyscrapers_hdr_13681_1280x720.jpg
-  		https://images3.alphacoders.com/240/240047.jpg
-  		http://www.tokkoro.com/picsup/2808961-landscape-cityscape-skyscraper-building-sunrise-lights-bay-pier-hong-kong-sea-mountain-clouds-urban-architecture-modern-nature___landscape-nature-wallpapers.jpg
-  		https://www.repro.nl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/5/7/57897298.jpg
+        <div class="header-banner row">
+          <div class="header-banner-text col-xs-12 col-sm-6">
+            <h1 class="header-banner-text-heading text-upp">A New Era <br>of Economics</h1>
+            <p class="header-banner-text-copy">Customers now expect your services to seamlessly flow data between their devices. This demand requires systems that can scale at the pace of the economy itself.</p>
+            <p class="header-banner-text-copy"><strong class="color-white">GUN</strong> is our realtime, distributed, offline-first, graph database engine. Capable of <strong class="color-white">20M+ ops/sec</strong>.</p>
+            <button class="btn btn-pri">Contact Sales <span class="btn-icon">&rarr;</span></button>
+          </div>
+          <div class="header-banner-cta col-xs-12 col-sm-6">
+            <a class="header-banner-cta-link" href="#"><img src="./assets/images/banner-cta.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-  		SIqjZWn-31A
-  		WdLD2KOAbzo &t=367s
-  		V7jAXmVNXQs
-  		Zdy69z-R2Aw
-  		DXA3JYdFKAE
-  		wnpj3NTZFGc
-  		iDM6sJpr1M8
+    <div class="block block--white">
+      <div class="container">
+        <h2 class="text-right">
+          <span class="heading heading--grey heading--right">Backed By</span>
+        </h2>
 
-  		?
-  		er6Xtuw1uqQ
-  		fSqH86YDGOs
-  	-->
-    <iframe srcq="http://www.youtube.com/embed/SIqjZWn-31A?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=SIqjZWn-31A" frameborder="0" allowfullscreen></iframe>
+        <div class="row middle-xs">
+          <div class="col-xs"><img src="./assets/images/backed-by/benioff.png" width="83" alt=""></div>
+          <div class="col-xs"><img src="./assets/images/backed-by/boost.png" width="84" alt=""></div>
+          <div class="col-xs"><img src="./assets/images/backed-by/brands.png" width="58" alt=""></div>
+          <div class="col-xs"><img src="./assets/images/backed-by/crcm.png" width="62" alt=""></div>
+          <div class="col-xs"><img src="./assets/images/backed-by/draper_assoc.png" width="106" alt=""></div>
+          <div class="col-xs"><img src="./assets/images/backed-by/efficient.png" width="79" alt=""></div>
+          <div class="col-xs"><img src="./assets/images/backed-by/td.png" width="75" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block block--grey">
+      <div class="container">
+        <h2 class="text-left">
+          <span class="heading heading--blue heading--left">Products</span>
+        </h2>
+
+        <div class="slider-wrapper">
+          <div class="slider">
+            <div class="slider-item">
+              <h2 class="slider-item-heading text-upp">GUN</h2>
+              <h3 class="slider-item-subheading">Realtime, decentralized, offline-first, graph database engine</h3>
+              <p class="slider-item-copy">The data that needs to stored, loaded, and shared in your app without worrying about servers, network calls, databases, or tracking offline changes or concurrency conflicts.</p>
+            </div>
+
+            <div class="slider-item slider-item--dark">
+              <h2 class="slider-item-heading text-upp">AXE</h2>
+              <h3 class="slider-item-subheading">Trustless decentralized bandwith incentive</h3>
+              <p class="slider-item-copy">A protocol design that removes the need for trust, such that a direct connection can be emulated through those servers, but still compensates servers for their efforts.</p>
+            </div>
+
+            <nav class="slider-nav">
+              <a class="slider-nav-link slider-nav-link--active" href="#"></a>
+              <a class="slider-nav-link" href="#"></a>
+            </nav>
+          </div>
+
+          <a class="slider-arrow" href="#">&rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="block block--min">
+      <div class="container">
+        <h2 class="text-right">
+          <span class="heading heading--grey heading--right">Try Gun Now</span>
+        </h2>
+
+        <div class="editor">
+          <nav class="editor-nav">
+            <a class="editor-nav-item editor-nav-item--active" href="#">1. Connect</a>
+            <a class="editor-nav-item" href="#">2. Create</a>
+            <a class="editor-nav-item" href="#">3. Sync</a>
+          </nav>
+
+          <div class="editor-content">
+            <ul class="editor-content-code">
+              <li class="editor-content-code-no"><span class="color-comment">// Get ready for gunishment</span></li>
+              <li class="editor-content-code-no"><span class="color-var">var</span>  gun = <span class="color-function">Gun</span>(<span class="color-string">‘https://gunjs.herokuapp.com/gun'</span>);</li>
+              <li class="editor-content-code-no">&nbsp;</li>
+              <li class="editor-content-code-no"><span class="color-comment">// Reference a random object and save data to it</span></li>
+              <li class="editor-content-code-no">gun.<span class="color-function">get</span>(<span class="color-string">‘random/3kqOozW0a’</span>)</li>
+              <li class="editor-content-code-no">&nbsp;&nbsp;.<span class="color-function">put</span>({ hello: <span class="color-string">‘world’</span> });</li>
+              <li class="editor-content-code-no">&nbsp;</li> 
+            </ul>
+
+            <div class="editor-content-action">
+              <p class="editor-content-action-copy">In this 1 minute tutorial, we will connect to a gun peer, create an object, and sync data in realtime.</p>
+              <span><button class="btn btn-sec m-r-10" href="#">Run <span class="btn-icon">&rarr;</span></button></span>
+              <span><button class="btn btn-sec-o" href="#">Full API Reference <span class="btn-icon">&rarr;</span></button></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="text-center m-b-100">
+        <h4>AXE <span class="color-grey">is a ​trustless​ ​decentralized​ ​bandwidth​ ​incentive <br>powered by</span> GUN's CRDT algorithm.</h4>
+        <button class="btn btn-pri-w m-b-30">READ THE WHITEPAPER <span class="btn-icon">&rarr;</span></button>
+
+        <p class="font-sm"><span class="text-und">Pull requests</span> are welcomed</p>
+      </div>
+
+      <h2 class="text-left">
+        <span class="heading heading--blue heading--left">Team</span>
+      </h2>
+
+      <div class="team">
+        <div class="team-member">
+          <div class="pos-rel">
+            <div class="team-member-item team-member-item-1"><img src="./assets/images/team/1.png" width="234" alt=""></div>
+            <div class="team-member-item team-member-item-2"><img src="./assets/images/team/2.png" width="259" alt=""></div>
+            <div class="team-member-item team-member-item-3"><img src="./assets/images/team/3.png" width="254" alt=""></div>
+            <div class="team-member-item team-member-item-4"><img src="./assets/images/team/4.png" width="215" alt=""></div>
+          </div>
+        </div>
+
+        <div class="team-feature">
+          <div class="team-feature-community"><img src="./assets/images/team/community.png" width="303" alt=""></div>
+          <div class="team-feature-techcrunch">
+            <img src="./assets/images/team/techcrunch.png" width="332" alt="">
+            <h4 class="team-feature-techcrunch-copy"> GUN raises more than $1.5M for its decentralized database system</h4>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-
-<div class="center">
-	  <p class="shout a whitet">A NEW ERA OF ECONOMICS</p>
-</div>
+</body>
+</html>

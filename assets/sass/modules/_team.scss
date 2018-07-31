@@ -1,0 +1,64 @@
+
+.team {
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  &-member {
+    float: left;
+    width: 60%;
+    position: relative;
+
+    &:before {
+      content: '';
+      background-color: #f1f1f1;
+      transform: rotate(-10deg);
+      position: absolute;
+      top: 0;
+      left: 10px;
+      right: 0;
+      bottom: 20px;
+    }
+
+    &-item {
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+
+      &-2, &-4 {
+        transform: translateY(50%)
+      }
+    }
+  }
+
+  &-feature {
+    position: relative;
+
+    &-community {
+      transform: translateX(-180px);
+      margin-bottom: 90px;
+    }
+
+    &-techcrunch {
+      transform: translateX(-120px);
+      margin-bottom: 90px;
+      overflow: hidden;
+      padding-left: 30px;
+
+      &-copy {
+        font-size: 48px;
+        line-height: 58px;
+
+        &:before {
+          content: '"';
+          font-size: 60px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}

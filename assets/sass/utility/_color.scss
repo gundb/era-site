@@ -1,0 +1,10 @@
+
+.color {
+  &-pri { color: $pri-color; }
+  &-white { color: #ffffff; }
+  &-grey { color: #9B9B9B; }
+  &-comment { color: #A5B3BB; }
+  &-var { color: #6206DB; }
+  &-function { color: #0677DB; }
+  &-string { color: #00D89A; }
+}
