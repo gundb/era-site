@@ -1,0 +1,40 @@
+
+
+.skew {
+  position: relative;
+
+  &:after {
+    content: '';
+    transform: skewY(-7deg);
+    transform-origin: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  &-bottom {
+    padding-bottom: 150px;
+    margin-bottom: -50px;
+
+    &:after {
+      height: 300px;
+      bottom: -150px;
+    }
+  }
+
+  &-middle {
+    &:after {
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
+  &-top {
+    &:after {
+      height: 600px;
+      top: -300px;
+      z-index: -1;
+    }
+  }
+}

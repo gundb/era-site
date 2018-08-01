@@ -43,36 +43,24 @@
 }
 
 .block {
-  position: relative;
-  margin-top: -135px;
-  padding-bottom: 100px;
-  margin-bottom: 170px;
+  &-backed-by {
+    margin-bottom: 150px;
+  }
 
-  &--min {
+  &-products {
+    margin-bottom: 150px;
+  }
+
+  &-try-gun-now {
+    margin-bottom: 200px;
+  }
+
+  &-contact {
     margin-bottom: 100px;
   }
 
-  &:before {
-    content: '';
-    width: 100%;
-    transform: skewY(-10deg);
-    position: absolute;
-  }
-
-  &--white {
-    &:before {
-      background-color: #fff;
-      top: -70px;
-      bottom: -70px;
-    }
-  }
-
-  &--grey {
-    &:before {
-      background-color: #f1f1f1;
-      top: 70px;
-      bottom: 70px;
-    }
+  &-team {
+    margin-bottom: 150px;
   }
 }
 

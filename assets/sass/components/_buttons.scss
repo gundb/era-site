@@ -34,10 +34,29 @@
     color: #fff;
     border-color: #fff; 
   }
+
   &-green {
     background-color: #0A9601;
     color: #fff;
     border-color: #0A9601; 
+  }
+
+  &-card-green {
+    background-color: $card-btn-green-color;
+    color: #fff;
+    border-color: $card-btn-green-color; 
+  }
+
+  &-card-blue {
+    background-color: $card-btn-blue-color;
+    color: #fff;
+    border-color: $card-btn-blue-color; 
+  }
+
+  &-card-indigo {
+    background-color: $card-btn-indigo-color;
+    color: #fff;
+    border-color: $card-btn-indigo-color; 
   }
 
   &-icon {
