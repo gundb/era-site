@@ -6,6 +6,7 @@
   color: #fff;
   border-radius: 5px;
   position: relative;
+  background-color: #171d70;
 
   &-wrapper {
     position: relative;
@@ -37,6 +38,11 @@
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
+    }
+
+    &-link {
+      font-size: 12px;
+      color: white;
     }
 
     &--dark {
@@ -87,6 +93,11 @@
     position: absolute;
     top: 50%;
     right: 0;
-    box-shadow: 5px 0 5px rgba(0, 0, 0, .2)
+    box-shadow: 5px 0 5px rgba(0, 0, 0, .2);
+    color: #131371;
+    &--left {
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
   }
 }
