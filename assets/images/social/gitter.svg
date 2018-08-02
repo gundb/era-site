@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="36px" viewBox="0 0 37 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>gitter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-529.000000, -4787.000000)" fill-rule="nonzero">
+            <g id="gitter" transform="translate(529.268293, 4787.370370)">
+                <polygon id="Shape" fill="#FFFFFF" points="-2.27373675e-13 0 35.8745645 0 35.8745645 35.6296296 -2.27373675e-13 35.6296296"></polygon>
+                <path d="M11.7592899,8.75055353 L13.5144809,8.75055353 L13.5144809,20.2551661 L11.7592899,20.2551661 L11.7592899,8.75055353 Z M22.4304313,11.5395463 L24.1854823,11.5395463 L24.1854823,20.2551661 L22.4304313,20.2551661 L22.4304313,11.5395463 Z M15.3397395,11.5395463 L17.0947905,11.5395463 L17.0947905,26.9140098 L15.3397395,26.9140098 L15.3397395,11.5395463 Z M18.8499816,11.5395463 L20.6051727,11.5395463 L20.6051727,26.9140098 L18.8499816,26.9140098 L18.8499816,11.5395463 Z" id="Shape" fill="#5E229D"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,103 @@
+
+.slider {
+  overflow: hidden;
+  font-size: 0;
+  white-space: nowrap;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  background-color: #171d70;
+
+  &-wrapper {
+    position: relative;
+  }
+
+  &-item {
+    display: inline-block;
+    vertical-align: top;
+    background-color: $blue-color;
+    padding: 70px 60px 80px;
+    max-width: 80%;
+    white-space: normal;
+
+    &-subheading {
+      line-height: 58px;
+      min-height: 174px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    &-copy {
+      opacity: .87;
+      font-size: 16px;
+      line-height: 25px;
+      min-height: 75px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    &-link {
+      font-size: 12px;
+      color: white;
+    }
+
+    &--dark {
+      background-color: $card-blue-color;
+
+      &:after {
+        content: '';
+        background-image: linear-gradient(to right, transparent, $card-blue-color);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 80%;
+      }
+    }
+  }
+
+  &-nav {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+
+    &-link {
+      float: left;
+      width: 80px;
+      height: 3px;
+      background-color: #fff;
+      margin-right: 25px;
+      opacity: .21;
+
+      &--active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-arrow {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 54px;
+    font-size: 40px;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    transform: translate(50%, -50%);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, .2);
+    color: #131371;
+    &--left {
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

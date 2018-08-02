@@ -1,0 +1,81 @@
+
+.heading {
+  display: inline-block;
+  font-size: 48px;
+  text-transform: uppercase;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+  }
+
+  &--grey {
+    color: $grey-color;
+
+    &:after {
+      background-color: $grey-color;
+    }
+  }
+
+  &--blue {
+    color: $blue-color;
+
+    &:after {
+      background-color: $blue-color;
+    }
+  }
+
+  &--left {
+    &:after {
+      left: 0;
+    }
+  }
+
+  &--right {
+    &:after {
+      right: 0;
+    }
+  }
+}
+
+.block {
+  &-backed-by {
+    margin-bottom: 150px;
+  }
+
+  &-products {
+    margin-bottom: 150px;
+  }
+
+  &-try-gun-now {
+    margin-bottom: 200px;
+  }
+
+  &-contact {
+    margin-bottom: 100px;
+  }
+
+  &-team {
+    margin-bottom: 150px;
+  }
+}
+
+.m {
+  &-r-10 {
+    margin-right: 10px;
+  }
+  &-b-30 {
+    margin-bottom: 30px;
+  }
+  &-b-100 {
+    margin-bottom: 100px;
+  }
+}
+
+.pos {
+  &-rel { position: relative; }
+}

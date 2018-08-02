@@ -1,0 +1,81 @@
+
+.editor {
+  &-nav {
+    font-size: 14px;
+    color: #abb;
+    padding-left: 15px;
+    border-bottom: 1px solid #f1f1f1;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+
+    &:after {
+      content: '';
+      width: 150px;
+      height: 3px;
+      background-color: $blue-color;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    &-item {
+      float: left;
+      padding: 15px 25px;
+
+      &--active {
+        color: $blue-color;
+      }
+    }
+  }
+
+  &-content {
+    background-color: #E6EBEE;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    
+    &-code {
+      float: left;
+      width: calc(60% - 70px);
+      height: 212px;
+      background-color: #F7F8F9;
+      font-size: 14px;
+      line-height: 26px;
+      padding: 15px 30px;
+      margin-left: 70px;
+      counter-reset: counter;
+      
+      &-no {
+        position: relative;
+
+        &:before {
+          counter-increment: counter;
+          content: counter(counter);
+          width: 50px;
+          text-align: center;
+          color: #A5B3BB;
+          position: absolute;
+          top: 0;
+          left: -90px;
+        }
+      }
+    }
+
+    &-action {
+      float: left;
+      width: 40%;
+      height: 212px;
+      font-size: 16px;
+      line-height: 26px;
+      background-color: #0677DB;
+      opacity: .85;
+      color: #fff;
+      padding: 35px 40px;
+
+      &-copy {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+
+.header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  &-top {
+    padding-top: 40px;
+    margin-bottom: 150px;
+
+    &-nav {
+      &-item {
+        margin-left: 35px;
+      }
+    }
+  }
+
+  &-banner {
+    padding-bottom: 200px;
+
+    &-text {
+      &-heading {
+        margin-top: 60px;
+      }
+
+      &-copy {
+        color: $header-copy;
+      }
+    }
+
+    &-cta {
+      &-link {
+        display: block;
+      }
+    } 
+  }
+
+  @media only screen and (max-width: 640px) {
+    background-image: url('../images/header-banner/banner-background.jpg');
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (max-width: 640px) {
+    background-image: url('../images/header-banner/banner-background@2x.jpg');
+  }
+
+  @media only screen and (min-width: 641px) and (max-width: 768px) {
+    background-image: url('../images/header-banner/banner-background--mobile.jpg');
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 641px) and (max-width: 768px) {
+    background-image: url('../images/header-banner/banner-background--mobile@2x.jpg');
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 960px) {
+    background-image: url('../images/header-banner/banner-background--tablet.jpg');
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 769px) and (max-width: 960px) {
+    background-image: url('../images/header-banner/banner-background--tablet@2x.jpg');
+  }
+
+  @media only screen and (min-width: 961px) {
+    background-image: url('../images/header-banner/banner-background--desktop.jpg');
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-width: 961px) {
+    background-image: url('../images/header-banner/banner-background--desktop@2x.jpg');
+  }
+}

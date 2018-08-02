@@ -1,0 +1,65 @@
+
+.team {
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  &-member {
+    position: relative;
+
+    &:before {
+      content: '';
+      background-color: #E6EBEE;
+      transform: rotate(-10deg);
+      position: absolute;
+      top: 40px;
+      left: -50px;
+      right: -30px;
+      bottom: -120px;
+    }
+
+    &-item {
+      display: inline-block;
+      vertical-align: top;
+      margin: 10px;
+
+      &-2, &-4 {
+        transform: translateY(50%)
+      }
+    }
+  }
+
+  &-feature {
+    position: relative;
+
+    &-community {
+      transform: translateX(-180px);
+      margin-bottom: 90px;
+    }
+
+    &-techcrunch {
+      transform: translateX(-120px);
+      margin-bottom: 90px;
+      padding-left: 30px;
+
+      &-copy {
+        font-size: 48px;
+        line-height: 58px;
+        margin-top: 30px;
+        position: relative;
+
+        &:before {
+          content: '';
+          width: 53px;
+          height: 40px;
+          background: url('../images/quote.svg') no-repeat center;
+          position: absolute;
+          top: 5px;
+          left: -80px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-image: none; 
+  padding: 13px 15px;
+  border: 1px solid;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+
+  &-pri {
+    background-color: #00D89A;
+    color: $sec-dark-color; 
+    border-color: #00D89A;
+  }
+
+  &-pri-w {
+    background-color: #00D89A;
+    color: #fff; 
+    border-color: #00D89A;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+  }
+
+  &-sec {
+    background-color: #fff;
+    color: #0677DB; 
+    border-color: #fff;
+  }
+
+  &-sec-o {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff; 
+  }
+
+  &-green {
+    background-color: #0A9601;
+    color: #fff;
+    border-color: #0A9601; 
+  }
+
+  &-card-green {
+    background-color: $card-btn-green-color;
+    color: #fff;
+    border-color: $card-btn-green-color; 
+  }
+
+  &-card-blue {
+    background-color: $card-btn-blue-color;
+    color: #fff;
+    border-color: $card-btn-blue-color; 
+  }
+
+  &-card-indigo {
+    background-color: $card-btn-indigo-color;
+    color: #fff;
+    border-color: $card-btn-indigo-color; 
+  }
+
+  &-icon {
+    padding-left: 20px;
+  }
+}

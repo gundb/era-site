@@ -1,0 +1,24 @@
+
+.background {
+  &-pri { background-color: $pri-color; }
+  &-white { background-color: #ffffff; }
+  &-off-white { background-color: #f1f1f1; }
+  &-grey { background-color: #9B9B9B; }
+  &-comment { background-color: #A5B3BB; }
+  &-var { background-color: #6206DB; }
+  &-function { background-color: #0677DB; }
+  &-string { background-color: #00D89A; }
+  &-indigo { background-color: #5E239D; }
+}
+
+.background-after {
+  &-pri:after { background-color: $pri-color; }
+  &-white:after { background-color: #ffffff; }
+  &-off-white:after { background-color: #f1f1f1; }
+  &-grey:after { background-color: #9B9B9B; }
+  &-comment:after { background-color: #A5B3BB; }
+  &-var:after { background-color: #6206DB; }
+  &-function:after { background-color: #0677DB; }
+  &-string:after { background-color: #00D89A; }
+  &-indigo:after { background-color: #5E239D; }
+}
