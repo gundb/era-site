@@ -1345,10 +1345,7 @@ nav {
 
   .card-list {
     padding: 25px 25px 0 25px; }
-    .card-list .col-xs-4 {
-      -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-      max-width: 100%;
+    .card-list .col-xs-12 {
       margin-bottom: 25px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -14,10 +14,7 @@
   }
   .card-list{
     padding: 25px 25px 0 25px;
-    .col-xs-4 {
-      -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-      max-width: 100%;
+    .col-xs-12 {
       margin-bottom: 25px;
     }
   }
