@@ -1330,18 +1330,41 @@ nav {
       margin-left: 30px; }
 
 @media only screen and (max-width: 960px) {
-  nav, footer, .header-banner-cta, .block-backed-by, .block-products, .block-try-gun-now, .block-read-whitepaper, .block-team {
+  nav, footer, .header-banner-cta, .block-backed-by, .block-try-gun-now, .block-team, .slider-arrow {
     display: none; }
 
-  .header-top {
-    margin-bottom: 30px; }
+  .header {
+    padding-bottom: 30px; }
+    .header .header-top {
+      margin-bottom: 30px; }
+    .header .header-banner {
+      padding-left: 10px;
+      padding-right: 10px; }
+    .header h1 {
+      font-size: 4.2rem; }
+    .header .btn.btn-pri {
+      width: 100%;
+      position: relative;
+      text-align: center; }
+      .header .btn.btn-pri .btn-icon {
+        position: absolute;
+        right: 20px; }
 
-  .header-banner {
-    padding-left: 10px;
-    padding-right: 10px; }
+  .slider-item {
+    max-width: 100%;
+    padding: 50px 30px 50px; }
+    .slider-item .slider-item-heading {
+      font-size: 4.3rem; }
+    .slider-item .slider-item-subheading {
+      display: block;
+      font-size: 4.3rem; }
+    .slider-item .slider-item-link {
+      font-size: 15px; }
+    .slider-item.slider-item--dark {
+      display: none; }
 
-  h1 {
-    font-size: 4rem; }
+  .block-read-whitepaper br {
+    display: none; }
 
   .card-list {
     padding: 25px 25px 0 25px; }
