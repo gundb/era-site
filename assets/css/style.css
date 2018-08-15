@@ -1329,8 +1329,8 @@ nav {
     .footer-top-nav-item {
       margin-left: 30px; }
 
-@media only screen and (max-width: 960px) {
-  nav, footer, .header-banner-cta, .block-backed-by, .block-try-gun-now, .block-team, .slider-arrow {
+@media only screen and (max-width: 991px) {
+  nav, .footer-top, .header-banner-cta, .block-backed-by, .block-try-gun-now, .block-team, .slider-arrow {
     display: none; }
 
   .header {
@@ -1347,8 +1347,7 @@ nav {
       position: relative;
       text-align: center; }
       .header .btn.btn-pri .btn-icon {
-        position: absolute;
-        right: 20px; }
+        display: none; }
 
   .slider-item {
     max-width: 100%;
@@ -1369,6 +1368,17 @@ nav {
   .card-list {
     padding: 25px 25px 0 25px; }
     .card-list .col-xs-12 {
-      margin-bottom: 25px; } }
+      margin-bottom: 25px; }
+
+  .block-contact {
+    margin-bottom: 50px; }
+
+  .footer {
+    padding-bottom: 0; }
+    .footer .footer-copyright {
+      text-align: center; } }
+@media only screen and (max-width: 1200px) {
+  .editor .btn-icon {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

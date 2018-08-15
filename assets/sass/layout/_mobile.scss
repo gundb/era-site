@@ -1,5 +1,5 @@
-@media only screen and (max-width: 960px) {
-  nav, footer, .header-banner-cta, .block-backed-by, .block-try-gun-now, .block-team, .slider-arrow {
+@media only screen and (max-width: 991px) {
+  nav, .footer-top, .header-banner-cta, .block-backed-by, .block-try-gun-now, .block-team, .slider-arrow {
     display: none;
   }
 
@@ -25,8 +25,7 @@
       text-align: center;
 
       .btn-icon {
-        position: absolute;
-        right: 20px;
+        display: none;
       }
     }
   }
@@ -64,6 +63,25 @@
 
     .col-xs-12 {
       margin-bottom: 25px;
+    }
+  }
+
+  .block-contact {
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    padding-bottom: 0;
+    .footer-copyright {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .editor {
+    .btn-icon {
+      display: none;
     }
   }
 }
