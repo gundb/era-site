@@ -24,6 +24,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="./assets/images/favicon.ico/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -269,6 +270,9 @@
     </footer>
   </div>
   <script>
+    // TODO: Migrate vanilla js parts to jQuery, detach and minimize
+
+    // modal start
     var modal = document.getElementById("header-banner-video-modal");
     var btn = document.getElementById("header-banner-cta-img");
     var span = document.getElementsByClassName("close")[0];
@@ -283,6 +287,9 @@
         modal.style.display = "none";
       }
     }
+    // ---------- modal end
+
+    // slider start
     var left = document.getElementById("slider-arrow--left");
     var right = document.getElementById("slider-arrow--right");
     var gunSlide = document.getElementsByClassName("slider-item")[0];
@@ -300,6 +307,16 @@
       gunSlide.style.display = "inline-block";
       left.style.display = "none";
     }
+    // ---------- slider end
+
+    // scroll to start
+    $('a[href*="#"]').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+      }, 700, 'linear');
+    });
+    // ---------- scroll to end
   </script>
 </body>
 </html>
