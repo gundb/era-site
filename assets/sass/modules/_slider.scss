@@ -95,9 +95,15 @@
     right: 0;
     box-shadow: 5px 0 5px rgba(0, 0, 0, .2);
     color: #131371;
+    img {
+      padding: 13px 11px;
+    }
     &--left {
       left: 0;
       transform: translate(-50%, -50%);
+      img {
+        transform: rotate(-180deg);
+      }
     }
   }
 }
