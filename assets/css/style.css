@@ -48,7 +48,8 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
 
 .row {
   box-sizing: border-box;
@@ -868,6 +869,14 @@ nav {
   background-color: #00D89A; }
 .background-after-indigo:after {
   background-color: #5E239D; }
+.background-after-gradient {
+  z-index: 0;
+  top: 80px;
+  opacity: 0.4; }
+.background-after-gradient:after {
+  background-image: -webkit-linear-gradient(left, #9B5DEF, #0677DB);
+  background-image: -o-linear-gradient(left, #9B5DEF, #0677DB);
+  background-image: linear-gradient(to right, #9B5DEF, #0677DB); }
 
 .color-pri {
   color: #bbe; }
