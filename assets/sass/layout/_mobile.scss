@@ -29,7 +29,7 @@
       }
     }
   }
-  
+
   .slider-item {
     max-width: 100%;
     padding: 50px 30px 50px;
@@ -68,6 +68,9 @@
 
   .block-contact {
     margin-bottom: 50px;
+    .card-list .row .col-xs-12:first-child{
+      display: none;
+    }
   }
 
   .footer {
