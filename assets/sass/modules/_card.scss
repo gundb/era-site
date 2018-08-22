@@ -23,7 +23,7 @@
 
       &--indigo:before {
         background: linear-gradient(
-            to bottom, 
+            to bottom,
               $card-indigo-color 25%,
               lighten($card-indigo-color, 25%) 25%,
               lighten($card-indigo-color, 25%) 50%,
@@ -35,7 +35,7 @@
 
       &--green:before {
         background: linear-gradient(
-            to bottom, 
+            to bottom,
               $card-green-color 25%,
               lighten($card-green-color, 25%) 25%,
               lighten($card-green-color, 25%) 50%,
@@ -47,7 +47,7 @@
 
       &--blue:before {
         background: linear-gradient(
-            to bottom, 
+            to bottom,
               $card-blue-color 25%,
               lighten($card-blue-color, 25%) 25%,
               lighten($card-blue-color, 25%) 50%,
