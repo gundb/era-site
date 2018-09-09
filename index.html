@@ -114,8 +114,8 @@
                 <a class="slider-item-link" href="https://gun.eco/docs/AXE">&rarr; https://www.axe.eco</a>
               </div>
             </div>
-            <a class="slider-arrow" id="slider-arrow--right" href="#"><img src="./assets/images/arrow.svg"></a>
-            <a class="slider-arrow slider-arrow--left" id="slider-arrow--left" href="#"><img src="./assets/images/arrow.svg"></a>
+            <a class="slider-arrow" id="slider-arrow--right" href="javascript:void(0)"><img src="./assets/images/arrow.svg"></a>
+            <a class="slider-arrow slider-arrow--left" id="slider-arrow--left" href="javascript:void(0)"><img src="./assets/images/arrow.svg"></a>
           </div>
         </div>
       </div>
@@ -289,23 +289,29 @@
     // ---------- modal end
 
     // slider start
-    var left = document.getElementById("slider-arrow--left");
-    var right = document.getElementById("slider-arrow--right");
-    var gunSlide = document.getElementsByClassName("slider-item")[0];
+    var $left =  $('#slider-arrow--left');
+    var $right =  $('#slider-arrow--right');
+    var $gunSlide = $('.slider-item').first();
+    $left.hide();
 
-    left.style.display = "none";
-    right.onclick = function(e) {
+    $right.on('click', function (e) {
       e.preventDefault();
-      left.style.display = "block";
-      right.style.display = "none";
-      gunSlide.style.display = "none";
-    }
-    left.onclick = function(e) {
+      $left.show();
+      $right.hide();
+      $gunSlide.animate({
+        width: 'toggle',
+        height: 569
+      });
+    });
+    $left.on('click', function (e) {
       e.preventDefault();
-      right.style.display = "block";
-      gunSlide.style.display = "inline-block";
-      left.style.display = "none";
-    }
+      $right.show();
+      $left.hide();
+      $gunSlide.animate({
+        width: 'toggle',
+        height: 569
+      });
+    });
     // ---------- slider end
 
     // scroll to start

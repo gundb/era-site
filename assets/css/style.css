@@ -1134,7 +1134,8 @@ nav {
       padding: 13px 11px; }
     .slider-arrow--left {
       left: 0;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2); }
       .slider-arrow--left img {
         transform: rotate(-180deg); }
 
