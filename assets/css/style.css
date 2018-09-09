@@ -1343,7 +1343,7 @@ nav {
       margin-left: 30px; }
 
 @media only screen and (max-width: 991px) {
-  nav, .footer-top, .header-banner-cta, .block-backed-by, .block-try-gun-now, .block-team, .slider-arrow {
+  nav, .footer-top, .header-banner-cta, .block-backed-by, .block-try-gun-now, .slider-arrow {
     display: none; }
 
   .header {
@@ -1382,6 +1382,28 @@ nav {
     padding: 25px 25px 0 25px; }
     .card-list .col-xs-12 {
       margin-bottom: 25px; }
+
+  .block-team {
+    margin-bottom: 100px; }
+    .block-team h2, .block-team .col-md-8, .block-team .team-feature > a {
+      display: none; }
+    .block-team .team-feature-techcrunch {
+      transform: none;
+      background-color: #E6EBEE;
+      margin: 0;
+      padding: 50px 30px 50px; }
+      .block-team .team-feature-techcrunch .team-feature-techcrunch-copy:before {
+        content: none; }
+      .block-team .team-feature-techcrunch img {
+        max-width: 80%; }
+      .block-team .team-feature-techcrunch .team-feature-techcrunch-copy {
+        font-size: 38px;
+        line-height: 48px; }
+      .block-team .team-feature-techcrunch .btn {
+        width: 100%;
+        text-align: center; }
+        .block-team .team-feature-techcrunch .btn .btn-icon {
+          display: none; }
 
   .block-contact {
     margin-bottom: 50px; }
