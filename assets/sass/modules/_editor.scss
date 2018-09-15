@@ -3,28 +3,18 @@
   &-nav {
     font-size: 14px;
     color: #abb;
-    padding-left: 15px;
     border-bottom: 1px solid #f1f1f1;
     overflow: hidden;
     position: relative;
     margin-bottom: 30px;
 
-    &:after {
-      content: '';
-      width: 150px;
-      height: 3px;
-      background-color: $blue-color;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-    }
-
     &-item {
       float: left;
-      padding: 15px 25px;
+      padding: 15px 30px;
 
       &--active {
         color: $blue-color;
+        border-bottom: 3px solid $blue-color;
       }
     }
   }
@@ -34,7 +24,7 @@
     border-radius: 5px;
     overflow: hidden;
     position: relative;
-    
+
     &-code {
       float: left;
       width: calc(60% - 70px);
@@ -45,7 +35,7 @@
       padding: 15px 30px;
       margin-left: 70px;
       counter-reset: counter;
-      
+
       &-no {
         position: relative;
 
@@ -74,7 +64,64 @@
       padding: 35px 40px;
 
       &-copy {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+      }
+
+      &--step3 {
+        p {
+          line-height: 36px;
+          margin-bottom: 20px;
+          span {
+            padding: 10px 15px;
+            background-color: black;
+            border-radius: 5px;
+            display: inline-block;
+            width: 100%;
+          }
+        }
+        #try-path, #try-sync {
+          width: 60px;
+        }
+      }
+    }
+  }
+
+  &-browser {
+    iframe {
+      border: none;
+      background-color: #F7F8F9;
+      width: 100%;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      color: #373737;
+      padding: 23px 0 0 23px;
+    }
+    &-head {
+      background-color: #E6EBEE;
+      padding: 10px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      a {
+        font-size: 12px;
+        background-color: #F7F8F9;
+        padding: 5px;
+        margin-left: 10px;
+        color: #A5B3BB;;
+      }
+    }
+    &-button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      &--red {
+        background-color: #E96E4C;
+      }
+      &--yellow {
+        background-color: #E6AA34;
+      }
+      &--green {
+        background-color: #85C33D;
       }
     }
   }

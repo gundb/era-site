@@ -938,6 +938,12 @@ nav {
 .pos-rel {
   position: relative; }
 
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
 .text-upp {
   text-transform: uppercase; }
 .text-und {
@@ -998,24 +1004,16 @@ nav {
 .editor-nav {
   font-size: 14px;
   color: #abb;
-  padding-left: 15px;
   border-bottom: 1px solid #f1f1f1;
   overflow: hidden;
   position: relative;
   margin-bottom: 30px; }
-  .editor-nav:after {
-    content: '';
-    width: 150px;
-    height: 3px;
-    background-color: #07d;
-    position: absolute;
-    left: 0;
-    bottom: 0; }
   .editor-nav-item {
     float: left;
-    padding: 15px 25px; }
+    padding: 15px 30px; }
     .editor-nav-item--active {
-      color: #07d; }
+      color: #07d;
+      border-bottom: 3px solid #07d; }
 .editor-content {
   background-color: #E6EBEE;
   border-radius: 5px;
@@ -1053,7 +1051,48 @@ nav {
     color: #fff;
     padding: 35px 40px; }
     .editor-content-action-copy {
+      margin-bottom: 15px; }
+    .editor-content-action--step3 p {
+      line-height: 36px;
       margin-bottom: 20px; }
+      .editor-content-action--step3 p span {
+        padding: 10px 15px;
+        background-color: black;
+        border-radius: 5px;
+        display: inline-block;
+        width: 100%; }
+    .editor-content-action--step3 #try-path, .editor-content-action--step3 #try-sync {
+      width: 60px; }
+.editor-browser iframe {
+  border: none;
+  background-color: #F7F8F9;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #373737;
+  padding: 23px 0 0 23px; }
+.editor-browser-head {
+  background-color: #E6EBEE;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+  .editor-browser-head a {
+    font-size: 12px;
+    background-color: #F7F8F9;
+    padding: 5px;
+    margin-left: 10px;
+    color: #A5B3BB; }
+.editor-browser-button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block; }
+  .editor-browser-button--red {
+    background-color: #E96E4C; }
+  .editor-browser-button--yellow {
+    background-color: #E6AA34; }
+  .editor-browser-button--green {
+    background-color: #85C33D; }
 
 .slider {
   overflow: hidden;
@@ -1391,6 +1430,7 @@ nav {
     .block-team .team-feature-techcrunch {
       transform: none;
       background-color: #E6EBEE;
+      border-radius: 5px;
       margin: 0;
       padding: 50px 30px 50px; }
       .block-team .team-feature-techcrunch .team-feature-techcrunch-copy:before {

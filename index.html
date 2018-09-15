@@ -25,6 +25,7 @@
   <meta name="msapplication-TileImage" content="./assets/images/favicon.ico/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://gunjs.herokuapp.com/gun.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -130,26 +131,71 @@
         <div class="editor">
           <nav class="editor-nav">
             <a class="editor-nav-item editor-nav-item--active">1. Connect</a>
-            <a class="editor-nav-item">2. Create</a>
+            <a class="editor-nav-item">2. Reference</a>
             <a class="editor-nav-item">3. Sync</a>
           </nav>
 
-          <div class="editor-content">
+          <div class="editor-content step step1">
             <ul class="editor-content-code">
               <li class="editor-content-code-no"><span class="color-comment">// Get ready for gunishment</span></li>
               <li class="editor-content-code-no"><span class="color-var">var</span>  gun = <span class="color-function">Gun</span>(<span class="color-string">‘https://gunjs.herokuapp.com/gun'</span>);</li>
               <li class="editor-content-code-no">&nbsp;</li>
               <li class="editor-content-code-no"><span class="color-comment">// Reference a random object and save data to it</span></li>
-              <li class="editor-content-code-no">gun.<span class="color-function">get</span>(<span class="color-string">‘random/3kqOozW0a’</span>)</li>
+              <li class="editor-content-code-no">gun.<span class="color-function">get</span>(<span class="color-string your-key">‘random/3kqOozW0a’</span>)</li>
               <li class="editor-content-code-no">&nbsp;&nbsp;.<span class="color-function">put</span>({ hello: <span class="color-string">‘world’</span> });</li>
               <li class="editor-content-code-no">&nbsp;</li>
             </ul>
-
             <div class="editor-content-action">
               <p class="editor-content-action-copy">In this 1 minute tutorial, we will connect to a gun peer, create an object, and sync data in realtime.</p>
-              <a href="https://gun.eco/docs/My-First-Todo-App"><span><button class="btn btn-sec m-r-10">Run <span class="btn-icon">&rarr;</span></button></span></a>
+              <a href="#step2"><span><button class="btn btn-sec m-r-10">Run <span class="btn-icon">&rarr;</span></button></span></a>
               <a href="https://gun.eco/docs/API"><span><button class="btn btn-sec-o">Full API Reference <span class="btn-icon">+</span></button></span></a>
             </div>
+          </div>
+
+          <div class="editor-content step step2 hide">
+            <ul class="editor-content-code">
+              <li class="editor-content-code-no"><span class="color-comment">// Reference an object</span></li>
+              <li class="editor-content-code-no"><span class="color-var">var</span>  ref = <span class="color-function">gun</span>.get(<span class="color-string your-key">'random/i0mKeFj8D'</span>);</li>
+              <li class="editor-content-code-no">&nbsp;</li>
+              <li class="editor-content-code-no"><span class="color-comment">// Print the ref</span></li>
+              <li class="editor-content-code-no"><span class="color-function">ref</span>.on(<span class="color-var">function</span>(<span class="color-comment">data</span>) {</span></li>
+              <li class="editor-content-code-no">&nbsp;&nbsp; $(<span class="color-string">'body'</span>).text(<span class="color-function">JSON</span>.stringify(<span class="color-comment">data</span>)); </li>
+              <li class="editor-content-code-no"> }); </li>
+            </ul>
+            <div class="editor-content-action">
+              <p class="editor-content-action-copy">Congratulations! You just referenced an object and saved data to it. In two tabs, we'll load that reference and sync data between them.</p>
+              <a href="#step3"><span><button class="btn btn-sec m-r-10">Next <span class="btn-icon">&rarr;</span></button></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="step hide step3">
+          <div class="row">
+            <div class="editor-browser col-xs-3">
+              <div class="editor-browser-head">
+                <span class="editor-browser-button editor-browser-button--red"></span>
+                <span class="editor-browser-button editor-browser-button--yellow"></span>
+                <span class="editor-browser-button editor-browser-button--green"></span>
+                <a href="https://gunjs.herokuapp.com/" target="_blank">https://gunjs.herokuapp.com/</a>
+              </div>
+              <iframe></iframe>
+            </div>
+            <div class="editor-browser col-xs-3">
+              <div class="editor-browser-head">
+                <span class="editor-browser-button editor-browser-button--red"></span>
+                <span class="editor-browser-button editor-browser-button--yellow"></span>
+                <span class="editor-browser-button editor-browser-button--green"></span>
+                <a href="https://gunjs.herokuapp.com/" target="_blank">https://gunjs.herokuapp.com/</a>
+              </div>
+              <iframe></iframe>
+            </div>
+
+            <form action="#step3" class="editor-content editor-content-action editor-content-action--step3 col-xs-6" onsubmit="return false;">
+              <p>Let's update the "hello" field with a different value. <br>
+              <span>ref.get('<input id="try-path" value="hello">').put("<input id="try-sync" value="sync">");</span></p>
+              <button type="submit" class="btn btn-sec m-r-10">UPDATE <span class="btn-icon">&rarr;</span></button>
+              <span class="hide editor-content-action--success">Great job! <a href="https://gun.eco/think.html" class="text-und">Want a more advanced tutorial?</a></span>
+            </form>
           </div>
         </div>
       </div>
@@ -269,7 +315,47 @@
     </footer>
   </div>
   <script>
-    // TODO: Migrate vanilla js parts to jQuery, detach and minimize
+    // interactive tutorial start
+    var gun;
+    var key = "random/" + Gun.text.random(9);
+    $(".your-key").text(key);
+    location.hash = 'step1';
+
+    $(window).on('hashchange', function() {
+      $('.step').removeClass('show').addClass('hide');
+      switch(location.hash) {
+        case "#step2":
+          $('.editor-nav-item').removeClass('editor-nav-item--active');
+          $('.editor-nav-item').eq(1).addClass('editor-nav-item--active');
+          break;
+        case "#step3":
+          $('.editor-nav-item').removeClass('editor-nav-item--active');
+          $('.editor-nav-item').eq(2).addClass('editor-nav-item--active');
+          break;
+        default:
+          $('.editor-nav-item').removeClass('editor-nav-item--active');
+          $('.editor-nav-item').eq(0).addClass('editor-nav-item--active');
+      }
+      $(location.hash.replace('#','.')).addClass('show');
+    });
+
+    $(".step1").find('button').on('click', function(e) {
+      if (gun) { return; }
+      gun = Gun('https://gunjs.herokuapp.com/gun');
+      gun.get(key).put({ hello: "world" });
+    });
+
+    $(".step2").find('button').on('click', function(e) {
+      $(".editor-browser").find("iframe").attr("src", "./tabs.html?key=" + key);
+    });
+
+    $(".step3").find('form').on('submit', function(e) {
+      var val = $("#try-sync").val() || null;
+      var path = $("#try-path").val();
+      gun.get(key).get(path).put(val);
+      $('.editor-content-action--success').removeClass('hide');
+    });
+    // ---------- interactive tutorial end
 
     // modal start
     var modal = document.getElementById("header-banner-video-modal");
@@ -316,10 +402,12 @@
 
     // scroll to start
     $('a[href*="#"]').on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top
-      }, 700, 'linear');
+      if ($(this).attr('href').indexOf('step') < 0) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top
+        }, 700, 'linear');
+      }
     });
     // ---------- scroll to end
   </script>
