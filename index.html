@@ -64,7 +64,7 @@
           <div id="header-banner-video-modal">
             <div class="header-banner-video-modal-content">
               <span class="close">&times;</span>
-              <iframe width="853" height="480" align="center" src="https://www.youtube.com/embed/F1GB8P6_gVo?rel=0" frameborder="0" allow="autoplay; encrypted-media" id="header-banner-video-modal-player" allowfullscreen></iframe>
+              <iframe width="853" height="480" align="center" src="" data-src="https://www.youtube.com/embed/F1GB8P6_gVo?rel=0" frameborder="0" allow="autoplay; encrypted-media" id="header-banner-video-modal-player" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -410,6 +410,18 @@
       }
     });
     // ---------- scroll to end
+
+    // defer video start
+    function lazyLoadExplainerVideo() {
+      var vidDefer = document.getElementsByTagName('iframe');
+      for (var i = 0; i < vidDefer.length; i++) {
+        if (vidDefer[i].getAttribute('data-src')) {
+          vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+       }
+      }
+    }
+    window.onload = lazyLoadExplainerVideo;
+    // ---------- defer video end
   </script>
 </body>
 </html>
