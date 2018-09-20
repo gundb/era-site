@@ -318,7 +318,7 @@
     // interactive tutorial start
     var gun;
     var key = "random/" + Gun.text.random(9);
-    $(".your-key").text(key);
+    $(".your-key").text("'" + key + "'");
     location.hash = 'step1';
 
     $(window).on('hashchange', function() {
