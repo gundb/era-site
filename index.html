@@ -5,87 +5,126 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Era - A New Era of Economics</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon.ico/android-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon.ico/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon.ico/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon.ico/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon.ico/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon.ico/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon.ico/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon.ico/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon.ico/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon.ico/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon.ico/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon.ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.ico/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicon.ico/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/images/favicon.ico/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gun/gun.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header skew skew-bottom background-after-white">
       <div class="container">
         <div class="header-top">
-          <a class="header-top-logo" href="index.html">Era</a>
+          <div class="row middle-xs between-xs">
+            <div class="col-xs">
+              <a class="header-top-logo" href="index.html">
+                <img src="./assets/images/era-logo.svg" alt="">
+              </a>
+            </div>
 
-          <nav class="header-top-nav">
-            <a class="header-top-nav-item" href="#products">Products</a>
-            <a class="header-top-nav-item" href="https://github.com/amark/gun">Developers</a>
-            <a class="header-top-nav-item" href="#team">Team</a>
-            <a class="header-top-nav-item" href="mailto:hi@era.eco">Contact</a>
-          </nav>
+            <div class="col-xs end-xs">
+              <nav class="header-top-nav">
+                <a class="header-top-nav-item" href="#products">Products</a>
+                <a class="header-top-nav-item" href="#developers">Developers</a>
+                <a class="header-top-nav-item" href="#team">Team</a>
+                <a class="header-top-nav-item" href="#contact">Contact</a>
+              </nav>
+            </div>
+          </div>
         </div>
 
         <div class="header-banner row">
-          <div class="header-banner-text col-xs-12 col-sm-6">
+          <div class="header-banner-text col-xs-12 col-md-6">
             <h1 class="header-banner-text-heading text-upp">A New Era <br>of Economics</h1>
-            <p class="header-banner-text-copy">Customers now expect your services to seamlessly flow data between their devices. This demand requires systems that can scale at the pace of the economy itself.</p>
-            <p class="header-banner-text-copy"><strong class="color-white">GUN</strong> is our realtime, distributed, offline-first, graph database engine. Capable of <strong class="color-white">20M+ ops/sec</strong>.</p>
-            <a href="mailto:hi@era.eco"><button class="btn btn-pri">Contact Sales <span class="btn-icon">&rarr;</span></button></a>
+            <p class="header-banner-text-copy">We are an R&D think tank reinventing how people interact with each other.</p>
+            <p class="header-banner-text-copy">Our moonshot goal is to give 6.4B+ people internet, be the Uber for Telecom, and change money from <i>how much you hoard</i> to <b>how many people you have helped</b>.</p>
+            <!-- p class="header-banner-text-copy"><strong class="color-white">GUN</strong> is our realtime, distributed, offline-first, graph database engine. Capable of <strong class="color-white">20M+ ops/sec</strong>.</p -->
+            <!-- a class="btn btn-pri" href="mailto:hi@era.eco">Contact Sales <span class="btn-icon">&rarr;</span></a -->
           </div>
           <!-- div class="header-banner-cta col-xs-12 col-sm-6">
-            <a class="header-banner-cta-link" href="#"><img src="./assets/images/banner-cta.png" alt=""></a>
+            <a class="header-banner-cta-link" href="javascript:void(0)"><img id="header-banner-cta-img" src="./assets/images/banner-cta.svg" alt=""></a>
           </div -->
+
+          <div id="header-banner-video-modal">
+            <div class="header-banner-video-modal-content">
+              <span class="close">&times;</span>
+              <iframe width="853" height="480" align="center" src="" data-src="https://www.youtube.com/embed/F1GB8P6_gVo?rel=0" frameborder="0" allow="autoplay; encrypted-media" id="header-banner-video-modal-player" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
-    <div class="block block--white">
+    <div class="block-backed-by">
       <div class="container">
         <h2 class="text-right">
           <span class="heading heading--grey heading--right">Backed By</span>
         </h2>
-
-        <a href="https://angel.co/gun"><div class="row middle-xs">
-          <div class="col-xs"><img src="./assets/images/backed-by/benioff.png" width="83" alt=""></div>
-          <div class="col-xs"><img src="./assets/images/backed-by/boost.png" width="84" alt=""></div>
-          <div class="col-xs"><img src="./assets/images/backed-by/brands.png" width="58" alt=""></div>
-          <div class="col-xs"><img src="./assets/images/backed-by/crcm.png" width="62" alt=""></div>
-          <div class="col-xs"><img src="./assets/images/backed-by/draper_assoc.png" width="106" alt=""></div>
-          <div class="col-xs"><img src="./assets/images/backed-by/efficient.png" width="79" alt=""></div>
-          <div class="col-xs"><img src="./assets/images/backed-by/td.png" width="75" alt=""></div>
-        </div></a>
+        <a href="https://angel.co/gun">
+          <div class="row middle-xs between-xs">
+            <div class="col-xs start-xs"><img src="./assets/images/backed-by/benioff.svg" width="83" alt=""></div>
+            <div class="col-xs start-xs"><img src="./assets/images/backed-by/boost.svg" width="84" alt=""></div>
+            <div class="col-xs center-xs"><img src="./assets/images/backed-by/brands.svg" width="58" alt=""></div>
+            <div class="col-xs center-xs"><img src="./assets/images/backed-by/crcm.svg" width="62" alt=""></div>
+            <div class="col-xs center-xs"><img src="./assets/images/backed-by/draper_assoc.svg" width="106" alt=""></div>
+            <div class="col-xs end-xs"><img src="./assets/images/backed-by/efficient.png" width="79" alt=""></div>
+            <div class="col-xs end-xs"><img src="./assets/images/backed-by/td.svg" width="75" alt=""></div>
+          </div>
+        </a>
       </div>
     </div>
 
-    <div id="products" class="block block--grey">
+    <div class="block-products" id="products">
       <div class="container">
         <h2 class="text-left">
           <span class="heading heading--blue heading--left">Products</span>
         </h2>
+      </div>
 
-        <div class="slider-wrapper">
-          <div class="slider">
-            <a href="https://gun.eco"><div class="slider-item">
-              <h2 class="slider-item-heading text-upp">GUN</h2>
-              <h3 class="slider-item-subheading">Realtime, decentralized, offline-first, graph database engine</h3>
-              <p class="slider-item-copy">The data that needs to stored, loaded, and shared in your app without worrying about servers, network calls, databases, or tracking offline changes or concurrency conflicts.</p>
-            </div></a>
+      <div class="skew skew-middle background-after-off-white">
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <div class="slider-item">
+                <h2 class="slider-item-heading text-upp">GUN</h2>
+                <h3 class="slider-item-subheading">Realtime, decentralized, <br>offline-first, graph database <br>engine</h3>
+                <p class="slider-item-copy">The data that needs to stored, loaded, and shared in your app without worrying about servers, network calls, databases, or tracking offline changes or concurrency conflicts.</p>
+                <a class="slider-item-link" href="https://gun.eco/">&rarr; https://www.gun.eco</a>
+              </div>
 
-            <a href="http://axe.eco"><div class="slider-item slider-item--dark">
-              <h2 class="slider-item-heading text-upp">AXE</h2>
-              <h3 class="slider-item-subheading">Trustless decentralized bandwith incentive</h3>
-              <p class="slider-item-copy">A protocol design that removes the need for trust, such that a direct connection can be emulated through those servers, but still compensates servers for their efforts.</p>
-            </div></a>
-
-            <nav class="slider-nav">
-              <a class="slider-nav-link slider-nav-link--active" href="#"></a>
-              <a class="slider-nav-link" href="#"></a>
-            </nav>
+              <div class="slider-item slider-item--dark">
+                <h2 class="slider-item-heading text-upp">AXE</h2>
+                <h3 class="slider-item-subheading">Trustless decentralized <br>bandwith incentive</h3>
+                <p class="slider-item-copy">A protocol design that removes the need for trust, such that a direct connection can be emulated through those servers, but still compensates servers for their efforts.</p>
+                <a class="slider-item-link" href="https://gun.eco/docs/AXE">&rarr; https://www.axe.eco</a>
+              </div>
+            </div>
+            <a class="slider-arrow" id="slider-arrow--right" href="javascript:void(0)"><img src="./assets/images/arrow.svg"></a>
+            <a class="slider-arrow slider-arrow--left" id="slider-arrow--left" href="javascript:void(0)"><img src="./assets/images/arrow.svg"></a>
           </div>
-
-          <a class="slider-arrow" href="http://axe.eco">&gt</a>
         </div>
       </div>
     </div>
 
-    <div class="block block--min">
-      <div class="container">
+    <div class="container">
+      <div class="block-try-gun-now" id="developers">
         <h2 class="text-right">
           <span class="heading heading--grey heading--right">Try Gun Now</span>
         </h2>
@@ -93,64 +132,297 @@
         <div class="editor">
           <nav class="editor-nav">
             <a class="editor-nav-item editor-nav-item--active">1. Connect</a>
-            <a class="editor-nav-item">2. Create</a>
+            <a class="editor-nav-item">2. Reference</a>
             <a class="editor-nav-item">3. Sync</a>
           </nav>
 
-          <div class="editor-content">
+          <div class="editor-content step step1">
             <ul class="editor-content-code">
               <li class="editor-content-code-no"><span class="color-comment">// Get ready for gunishment</span></li>
-              <li class="editor-content-code-no"><span class="color-var">var</span>  gun = <span class="color-function">Gun</span>([<span class="color-string">‘https://gunjs.herokuapp.com/gun'</span>]);</li>
+              <li class="editor-content-code-no"><span class="color-var">var</span>  gun = <span class="color-function">Gun</span>(<span class="color-string">‘https://gunjs.herokuapp.com/gun'</span>);</li>
               <li class="editor-content-code-no">&nbsp;</li>
               <li class="editor-content-code-no"><span class="color-comment">// Reference a random object and save data to it</span></li>
-              <li class="editor-content-code-no">gun.<span class="color-function">get</span>(<span class="color-string">‘random/3kqOozW0a’</span>)</li>
+              <li class="editor-content-code-no">gun.<span class="color-function">get</span>(<span class="color-string your-key">‘random/3kqOozW0a’</span>)</li>
               <li class="editor-content-code-no">&nbsp;&nbsp;.<span class="color-function">put</span>({ hello: <span class="color-string">‘world’</span> });</li>
-              <li class="editor-content-code-no">&nbsp;</li> 
+              <li class="editor-content-code-no">&nbsp;</li>
             </ul>
-
             <div class="editor-content-action">
               <p class="editor-content-action-copy">In this 1 minute tutorial, we will connect to a gun peer, create an object, and sync data in realtime.</p>
-              <a href="https://gun.eco/docs/My-First-Todo-App"><span><button class="btn btn-sec m-r-10" href="#">Run <span class="btn-icon">&rarr;</span></button></span></a>
-              <a href="https://gun.eco/docs/API"><span><button class="btn btn-sec-o" href="#">Full API Reference <span class="btn-icon">&rarr;</span></button></span></a>
+              <a href="#step2"><span><button class="btn btn-sec m-r-10">Run <span class="btn-icon">&rarr;</span></button></span></a>
+              <a href="https://gun.eco/docs/API"><span><button class="btn btn-sec-o">Full API Reference <span class="btn-icon">+</span></button></span></a>
+            </div>
+          </div>
+
+          <div class="editor-content step step2 hide">
+            <ul class="editor-content-code">
+              <li class="editor-content-code-no"><span class="color-comment">// Reference an object</span></li>
+              <li class="editor-content-code-no"><span class="color-var">var</span>  ref = <span class="color-function">gun</span>.get(<span class="color-string your-key">'random/i0mKeFj8D'</span>);</li>
+              <li class="editor-content-code-no">&nbsp;</li>
+              <li class="editor-content-code-no"><span class="color-comment">// Print the ref</span></li>
+              <li class="editor-content-code-no"><span class="color-function">ref</span>.on(<span class="color-var">function</span>(<span class="color-comment">data</span>) {</span></li>
+              <li class="editor-content-code-no">&nbsp;&nbsp; $(<span class="color-string">'body'</span>).text(<span class="color-function">JSON</span>.stringify(<span class="color-comment">data</span>)); </li>
+              <li class="editor-content-code-no"> }); </li>
+            </ul>
+            <div class="editor-content-action">
+              <p class="editor-content-action-copy">Congratulations! You just referenced an object and saved data to it. In two tabs, we'll load that reference and sync data between them.</p>
+              <a href="#step3"><span><button class="btn btn-sec m-r-10">Next <span class="btn-icon">&rarr;</span></button></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="step hide step3">
+          <div class="row">
+            <div class="editor-browser col-xs-3">
+              <div class="editor-browser-head">
+                <span class="editor-browser-button editor-browser-button--red"></span>
+                <span class="editor-browser-button editor-browser-button--yellow"></span>
+                <span class="editor-browser-button editor-browser-button--green"></span>
+                <a href="https://gunjs.herokuapp.com/" target="_blank">https://gunjs.herokuapp.com/</a>
+              </div>
+              <iframe></iframe>
+            </div>
+            <div class="editor-browser col-xs-3">
+              <div class="editor-browser-head">
+                <span class="editor-browser-button editor-browser-button--red"></span>
+                <span class="editor-browser-button editor-browser-button--yellow"></span>
+                <span class="editor-browser-button editor-browser-button--green"></span>
+                <a href="https://gunjs.herokuapp.com/" target="_blank">https://gunjs.herokuapp.com/</a>
+              </div>
+              <iframe></iframe>
+            </div>
+
+            <form action="#step3" class="editor-content editor-content-action editor-content-action--step3 col-xs-6" onsubmit="return false;">
+              <p>Let's update the "hello" field with a different value. <br>
+              <span>ref.get('<input id="try-path" value="hello">').put("<input id="try-sync" value="sync">");</span></p>
+              <button type="submit" class="btn btn-sec m-r-10">UPDATE <span class="btn-icon">&rarr;</span></button>
+              <span class="hide editor-content-action--success">Great job! <a href="https://gun.eco/think.html" class="text-und">Want a more advanced tutorial?</a></span>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-read-whitepaper">
+        <div class="text-center m-b-100">
+          <h4 class="">AXE <span class="color-grey">is a ​trustless​ ​decentralized​ ​bandwidth​ ​incentive <br>powered by</span> <a href="https://gun.eco/distributed/matters.html">GUN's CRDT algorithm</a>.</h4>
+          <a href="http://axe.eco" class="btn btn-pri-w m-b-30">READ THE WHITEPAPER <span class="btn-icon">&rarr;</span></a>
+
+          <p class="font-sm"><a class="text-und" href="https://gitter.im/amark/gun">Pull requests</a> are welcomed</p>
+        </div>
+      </div>
+
+      <div class="block-team">
+        <h2 class="text-left">
+          <span class="heading heading--blue heading--left">Team</span>
+        </h2>
+
+        <div class="team" id="team">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="team-member">
+                <div class="pos-rel">
+                  <div class="team-member-item team-member-item-1"><img src="./assets/images/team/1.svg" width="234" alt=""></div>
+                  <div class="team-member-item team-member-item-2"><img src="./assets/images/team/2.svg" width="259" alt=""></div>
+                  <div class="team-member-item team-member-item-3"><img src="./assets/images/team/3.svg" width="254" alt=""></div>
+                  <div class="team-member-item team-member-item-4"><img src="./assets/images/team/4.svg" width="215" alt=""></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <div class="team-feature">
+                <a href="https://github.com/amark/gun">
+                  <div class="team-feature-community"><img src="./assets/images/team/community.svg" width="303" alt=""></div>
+                </a>
+                <div class="team-feature-techcrunch">
+                  <a href="https://techcrunch.com/2018/05/23/gun-raises-more-than-1-5m-for-its-decentralized-database-system/">
+                    <img src="./assets/images/team/techcrunch.svg" width="332" alt="">
+                    <h4 class="team-feature-techcrunch-copy"> GUN raises more than $1.5M for its decentralized database system</h4>
+                    <a  href="https://techcrunch.com/2018/05/23/gun-raises-more-than-1-5m-for-its-decentralized-database-system/" class="btn btn-green">Read The Article <span class="btn-icon">&rarr;</span></a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-contact" id="contact">
+        <div class="card">
+          <h2 class="text-left">
+            <span class="card-heading heading heading--grey heading--left">Contact</span>
+          </h2>
+
+          <div class="card-list">
+            <div class="row">
+              <div class="col-xs-12 col-md-4">
+                <div class="card-list-item card-list-item--indigo">
+                  <h5 class="card-list-item-heading">Opensource</h5>
+                  <div class="card-list-item-price" data-after="/ forever">FREE</div>
+                  <p class="card-list-item-copy">Gun is proudly opensource.<br> And we are backed by this great community.</p>
+                  <a href="http://gun.js.org/" class="btn btn-card-indigo">View on GitHub <span class="btn-icon">&rarr;</span></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <div class="card-list-item card-list-item--green">
+                  <h5 class="card-list-item-heading">On Demand</h5>
+                  <div class="card-list-item-price" data-before="$" data-after="/ hour">999</div>
+                  <p class="card-list-item-copy">Training and Consulting.<br> Live code collaboration. Scheduled in a timely manner.</p>
+                  <a href="mailto:hi@era.eco" class="btn btn-card-green">Contact Us <span class="btn-icon">&rarr;</span></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4">
+                <div class="card-list-item card-list-item--blue">
+                  <h5 class="card-list-item-heading">Enterprise</h5>
+                  <div class="card-list-item-price" data-after="/ Pricing">Custom</div>
+                  <p class="card-list-item-copy">Everything from Subscription. <br>Included 1 week seminar. <br> Proprietary solutions.</p>
+                  <a href="mailto:hi@era.eco" class="btn btn-card-blue">Contact Us <span class="btn-icon">&rarr;</span></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer class="footer skew skew-top background-indigo background-after-indigo">
+      <div class="container">
+        <div class="footer-top">
+          <div class="row middle-xs">
+            <div class="col-xs-5 start-xs">
+              <nav class="footer-top-social">
+                <a class="footer-top-social-item" href="https://www.github.com/amark/gun"><img src="./assets/images/social/git.svg" alt=""></a>
+                <a class="footer-top-social-item" href="https://gitter.im/amark/gun"><img src="./assets/images/social/gitter.svg" alt=""></a>
+                <a class="footer-top-social-item" href="https://twitter.com/databasegun"><img src="./assets/images/social/twitter.svg" alt=""></a>
+              </nav>
+            </div>
 
-    <div class="container">
-      <div class="text-center m-b-100">
-        <h4>AXE <span class="color-grey">is a ​trustless​ ​decentralized​ ​bandwidth​ ​incentive <br>powered by</span> <a href="https://gun.eco/distributed/matters.html">GUN's CRDT algorithm</a>.</h4>
-        <a href="http://axe.eco"><button class="btn btn-pri-w m-b-30">READ THE WHITEPAPER <span class="btn-icon">&rarr;</span></button></a>
+            <div class="col-xs center-xs">
+              <a class="footer-top-logo"><img src="./assets/images/era-logo.svg" width="130" alt=""></a>
+            </div>
 
-        <p class="font-sm"><a href="https://gitter.im/amark/gun"><span class="text-und">Pull requests</span></a> are welcomed</p>
-      </div>
-
-      <h2 class="text-left">
-        <span class="heading heading--blue heading--left">Team</span>
-      </h2>
-
-      <div id="team" class="team">
-        <div class="team-member">
-          <div class="pos-rel">
-            <div class="team-member-item team-member-item-1"><img src="./assets/images/team/1.png" width="234" alt=""></div>
-            <div class="team-member-item team-member-item-2"><img src="./assets/images/team/2.png" width="259" alt=""></div>
-            <div class="team-member-item team-member-item-3"><img src="./assets/images/team/3.png" width="254" alt=""></div>
-            <div class="team-member-item team-member-item-4"><img src="./assets/images/team/4.png" width="215" alt=""></div>
+            <div class="col-xs-5 end-xs">
+              <nav class="footer-top-nav">
+                <a class="footer-top-nav-item" href="#products">Products</a>
+                <a class="footer-top-nav-item" href="#developers">Developers</a>
+                <a class="footer-top-nav-item" href="#team">Team</a>
+                <a class="footer-top-nav-item" href="#contact">Contact</a>
+              </nav>
+            </div>
           </div>
         </div>
 
-        <div class="team-feature">
-          <div class="team-feature-community"><a href="https://github.com/amark/gun"><img src="./assets/images/team/community.png" width="303" alt=""></a></div>
-          <div class="team-feature-techcrunch">
-            <a href="https://techcrunch.com/2018/05/23/gun-raises-more-than-1-5m-for-its-decentralized-database-system/">
-            <img src="./assets/images/team/techcrunch.png" width="332" alt="">
-            <h4 class="team-feature-techcrunch-copy"> GUN raises more than $1.5M for its decentralized database system</h4>
-            </a>
-          </div>
-        </div>
+        <p class="footer-copyright text-right">Designed with ♥ by the ERA team, and many very awesome contributors. Liberally licensed under Zlib or MIT or Apache 2.0</p>
       </div>
-    </div>
+      <div class="skew skew-top background-after-gradient"></div>
+    </footer>
   </div>
+  <script>
+    // interactive tutorial start
+    var gun;
+    var key = "random/" + Gun.text.random(9);
+    $(".your-key").text("'" + key + "'");
+    location.hash = 'step1';
+
+    $(window).on('hashchange', function() {
+      $('.step').removeClass('show').addClass('hide');
+      switch(location.hash) {
+        case "#step2":
+          $('.editor-nav-item').removeClass('editor-nav-item--active');
+          $('.editor-nav-item').eq(1).addClass('editor-nav-item--active');
+          break;
+        case "#step3":
+          $('.editor-nav-item').removeClass('editor-nav-item--active');
+          $('.editor-nav-item').eq(2).addClass('editor-nav-item--active');
+          break;
+        default:
+          $('.editor-nav-item').removeClass('editor-nav-item--active');
+          $('.editor-nav-item').eq(0).addClass('editor-nav-item--active');
+      }
+      $(location.hash.replace('#','.')).addClass('show');
+    });
+
+    $(".step1").find('button').on('click', function(e) {
+      if (gun) { return; }
+      gun = Gun('https://gunjs.herokuapp.com/gun');
+      gun.get(key).put({ hello: "world" });
+    });
+
+    $(".step2").find('button').on('click', function(e) {
+      $(".editor-browser").find("iframe").attr("src", "./tabs.html?key=" + key);
+    });
+
+    $(".step3").find('form').on('submit', function(e) {
+      var val = $("#try-sync").val() || null;
+      var path = $("#try-path").val();
+      gun.get(key).get(path).put(val);
+      $('.editor-content-action--success').removeClass('hide');
+    });
+    // ---------- interactive tutorial end
+
+    // modal start
+    var modal = document.getElementById("header-banner-video-modal");
+    var btn = document.getElementById("header-banner-cta-img");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    // ---------- modal end
+
+    // slider start
+    var $left =  $('#slider-arrow--left');
+    var $right =  $('#slider-arrow--right');
+    var $gunSlide = $('.slider-item').first();
+    $left.hide();
+
+    $right.on('click', function (e) {
+      e.preventDefault();
+      $left.show();
+      $right.hide();
+      $gunSlide.animate({
+        width: 'toggle',
+        height: 569
+      });
+    });
+    $left.on('click', function (e) {
+      e.preventDefault();
+      $right.show();
+      $left.hide();
+      $gunSlide.animate({
+        width: 'toggle',
+        height: 569
+      });
+    });
+    // ---------- slider end
+
+    // scroll to start
+    $('a[href*="#"]').on('click', function(e) {
+      if ($(this).attr('href').indexOf('step') < 0) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top
+        }, 700, 'linear');
+      }
+    });
+    // ---------- scroll to end
+
+    // defer video start
+    function lazyLoadExplainerVideo() {
+      var vidDefer = document.getElementsByTagName('iframe');
+      for (var i = 0; i < vidDefer.length; i++) {
+        if (vidDefer[i].getAttribute('data-src')) {
+          vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+       }
+      }
+    }
+    window.onload = lazyLoadExplainerVideo;
+    // ---------- defer video end
+  </script>
 </body>
 </html>

@@ -1,11 +1,12 @@
 
 .slider {
-  border-radius: 5px;
   overflow: hidden;
-  white-space: nowrap;
   font-size: 0;
+  white-space: nowrap;
+  color: #fff;
+  border-radius: 5px;
   position: relative;
-  user-select: none;
+  background-color: #171d70;
 
   &-wrapper {
     position: relative;
@@ -13,33 +14,43 @@
 
   &-item {
     display: inline-block;
+    vertical-align: top;
     background-color: $blue-color;
-    color: #fff;
-    padding: 40px 60px 80px;
+    padding: 70px 60px 80px;
     max-width: 80%;
     white-space: normal;
 
-    &-heading {
-      font-size: 48px;
-      font-weight: 300;
-    }
-
     &-subheading {
-      font-size: 48px;
-      line-height: 1.2;
+      line-height: 58px;
+      min-height: 174px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
 
     &-copy {
       opacity: .87;
       font-size: 16px;
+      line-height: 25px;
+      min-height: 75px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    &-link {
+      font-size: 12px;
+      color: white;
     }
 
     &--dark {
-      background-color: #131371;
+      background-color: $card-blue-color;
 
       &:after {
         content: '';
-        background-image: linear-gradient(to right, transparent, #131371);
+        background-image: linear-gradient(to right, transparent, $card-blue-color);
         position: absolute;
         top: 0;
         right: 0;
@@ -82,6 +93,18 @@
     position: absolute;
     top: 50%;
     right: 0;
-    box-shadow: 5px 0 5px rgba(0, 0, 0, .2)
+    box-shadow: 5px 0 5px rgba(0, 0, 0, .2);
+    color: #131371;
+    img {
+      padding: 13px 11px;
+    }
+    &--left {
+      left: 0;
+      transform: translate(-50%, -50%);
+      box-shadow: -5px 0 5px rgba(0, 0, 0, .2);
+      img {
+        transform: rotate(-180deg);
+      }
+    }
   }
 }

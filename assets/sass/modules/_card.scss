@@ -1,0 +1,93 @@
+
+.card {
+  &-list {
+    background-color: #E6EBEE;
+    padding: 45px;
+    border-radius: 5px;
+
+    &-item {
+      background-color: #fff;
+      padding: 40px 30px 30px;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 8px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+      }
+
+      &--indigo:before {
+        background: linear-gradient(
+            to bottom,
+              $card-indigo-color 25%,
+              lighten($card-indigo-color, 25%) 25%,
+              lighten($card-indigo-color, 25%) 50%,
+              lighten($card-indigo-color, 45%) 50%,
+              lighten($card-indigo-color, 45%) 75%,
+              transparent 75%
+          );
+      }
+
+      &--green:before {
+        background: linear-gradient(
+            to bottom,
+              $card-green-color 25%,
+              lighten($card-green-color, 25%) 25%,
+              lighten($card-green-color, 25%) 50%,
+              lighten($card-green-color, 45%) 50%,
+              lighten($card-green-color, 45%) 75%,
+              transparent 75%
+          );
+      }
+
+      &--blue:before {
+        background: linear-gradient(
+            to bottom,
+              $card-blue-color 25%,
+              lighten($card-blue-color, 25%) 25%,
+              lighten($card-blue-color, 25%) 50%,
+              lighten($card-blue-color, 45%) 50%,
+              lighten($card-blue-color, 45%) 75%,
+              transparent 75%
+          );
+      }
+
+      &-heading {
+        color: #4A4A4A;
+      }
+
+      &-price {
+        font-size: 48px;
+        color: #4A4A4A;
+        margin-top: 0;
+        margin-bottom: 50px;
+
+        &:before {
+          content: attr(data-before);
+          font-size: 24px;
+          color: $grey-color;
+          position: relative;
+          top: -15px;
+        }
+
+        &:after {
+          content: attr(data-after);
+          font-size: 24px;
+          color: $grey-color;
+          margin-left: 3px;
+        }
+      }
+
+      &-copy {
+        min-height: 104px;
+        color: #9B9B9B;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

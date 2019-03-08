@@ -1,0 +1,121 @@
+@media only screen and (max-width: 991px) {
+  nav, .footer-top, .header-banner-cta, .block-backed-by, .block-try-gun-now, .slider-arrow {
+    display: none;
+  }
+
+  .header {
+    padding-bottom: 30px;
+
+    .header-top {
+      margin-bottom: 30px;
+    }
+
+    .header-banner {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    h1 {
+      font-size: 4.2rem;
+    }
+
+    .btn.btn-pri {
+      width: 100%;
+      position: relative;
+      text-align: center;
+
+      .btn-icon {
+        display: none;
+      }
+    }
+  }
+
+  .slider-item {
+    max-width: 100%;
+    padding: 50px 30px 50px;
+
+    .slider-item-heading {
+      font-size: 4.3rem;
+    }
+
+    .slider-item-subheading {
+      display: block;
+      font-size: 4.3rem;
+    }
+
+    .slider-item-link {
+      font-size: 15px;
+    }
+
+    &.slider-item--dark {
+      display: none;
+    }
+  }
+
+  .block-read-whitepaper {
+    br {
+      display: none;
+    }
+  }
+
+  .card-list{
+    padding: 25px 25px 0 25px;
+
+    .col-xs-12 {
+      margin-bottom: 25px;
+    }
+  }
+
+  .block-team {
+    margin-bottom: 100px;
+    h2, .col-md-8, .team-feature > a {
+      display: none;
+    }
+    .team-feature-techcrunch {
+      transform: none;
+      background-color: #E6EBEE;
+      border-radius: 5px;
+      margin: 0;
+      padding: 50px 30px 50px;
+      .team-feature-techcrunch-copy:before {
+        content: none;
+      }
+      img {
+        max-width: 80%;
+      }
+      .team-feature-techcrunch-copy {
+        font-size: 38px;
+        line-height: 48px;
+      }
+      .btn {
+        width: 100%;
+        text-align: center;
+        .btn-icon {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .block-contact {
+    margin-bottom: 50px;
+    .card-list .row .col-xs-12:first-child{
+      display: none;
+    }
+  }
+
+  .footer {
+    padding-bottom: 0;
+    .footer-copyright {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .editor {
+    .btn-icon {
+      display: none;
+    }
+  }
+}
